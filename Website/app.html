@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="app.css">    
+<link href="bootstrap.min.css"/>
+<title>APPNAME Login</title>
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC6gkCdkP2RTs5KDuEf6nFS4GMlcM2_ADE",
+    authDomain: "cuhackit-5f237.firebaseapp.com",
+    databaseURL: "https://cuhackit-5f237.firebaseio.com",
+    projectId: "cuhackit-5f237",
+    storageBucket: "cuhackit-5f237.appspot.com",
+    messagingSenderId: "156127426619"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+
+<body>
+    <script src="app.js"></script>
+    
+    <h1>Welcome to (catchy app name)</h1>
+    <div class="login-page">
+        <div class="form">
+            <form class="qr-form" action="app.html" method="GET">
+                <input id="class" type="text" placeholder="class name"/>
+                <input id="phrase" type="text" placeholder="phrase"/>
+                <button id='createNewClass4' onclick="createNewClass()">Submit</button>
+
+            </form>
+        </div>
+     </div>
+</body>
+
+</html>
